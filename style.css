@@ -66,6 +66,11 @@ body {
   margin-right: 2px;
 }
 
+.nav-links{
+  text-decoration: none;
+  list-style: none;
+}
+
 .navbar-right-section {
   display: flex;
   padding-bottom: 20px;
