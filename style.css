@@ -1115,6 +1115,7 @@ input {
 
 textarea {
   outline: none;
+  border-radius:4px;
   border: 1px #a3aac2 solid;
   padding: 8px;
 }
