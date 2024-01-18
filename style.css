@@ -34,12 +34,11 @@ body {
   position: absolute;
   background-color: white;
   top: 0;
-  gap: 20px;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.navbar-left-section {
+.navbar-logo-section {
   cursor: pointer;
   color: var(--accentblue);
   display: flex;
@@ -57,11 +56,11 @@ body {
   align-items: center;
 }
 
-.navbar-left-section img {
+.navbar-logo-section img {
   height: 38px;
 }
 
-.navbar-left-section span {
+.navbar-logo-section span {
   font-style: italic;
   margin-right: 2px;
 }
@@ -69,24 +68,26 @@ body {
 .nav-links {
   text-decoration: none;
   list-style: none;
+  display: none;
 }
 
-.navbar-right-section {
-  display: flex;
+.navbar-menu-section {
+  display: none;
   padding-bottom: 20px;
+  margin-top: 20px;
   gap: 20px;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.navbar-right-section a {
+.navbar-menu-section a {
   cursor: pointer;
   font-weight: 500;
   text-decoration: none;
   color: var(--text-color);
 }
 
-.navbar-right-section a:hover {
+.navbar-menu-section a:hover {
   color: var(--hover-orange);
 }
 
@@ -101,7 +102,7 @@ body {
 }
 
 .hero-section h1 {
-  font-size: clamp(40px, 5.5vw, 75px);
+  font-size: 38px;
   width: fit-content;
   position: relative;
   font-weight: var(--semibold);
@@ -133,7 +134,7 @@ body {
 }
 
 .navig-section h5 {
-  font-size: clamp(20px, 0.8vw, 24px);
+  font-size: 18px;
   font-weight: var(--regular);
   color: #fff;
 }
@@ -178,7 +179,12 @@ body {
   font-size: 36px;
   font-weight: var(--bold);
   color: var(--button-background);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow:
+   -1px -1px 0 #000,  
+    0px -1px 0 #000,
+    -1px 1px 0 #000,
+    0px 1px 0 #000,
+    0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .reputation-section-wrapper {
@@ -254,7 +260,8 @@ body {
   border: none;
   font-weight: var(--semibold);
   cursor: pointer;
-  width: 219px;
+  width: fit-content;
+  padding: 20px 50px;
   color: var(--accentblue);
   background-color: white;
   transition: transform 200ms ease-in-out;
@@ -348,11 +355,9 @@ body {
 /* experince section css */
 .experience-section {
   display: flex;
-  overflow: hidden;
   justify-content: center;
   align-items: center;
   padding: 30px 44px;
-  gap: 50px;
   height: min-content;
   flex-direction: column;
 }
@@ -441,7 +446,6 @@ body {
 }
 
 .experience-section-right {
-  overflow: hidden;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -501,10 +505,13 @@ body {
 .consultation h3 {
   font-weight: var(--regular);
   font-size: 18px;
+  display: flex;
+  flex-direction: column;
   color: white;
 }
 
 .consultation h3 span {
+  cursor: pointer;
   text-decoration: underline;
 }
 
@@ -538,21 +545,30 @@ body {
 .project-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 70px;
+  gap: 40px;
   justify-content: center;
   padding-block: 10px;
 }
 
 .project-wrapper-left {
   display: flex;
-  flex-wrap: wrap;
+  overflow-x: scroll;
   gap: 30px;
+}
+
+.project-wrapper-left::-webkit-scrollbar{
+  display: none;
 }
 
 .project-wrapper-left h2 {
   font-weight: var(--regular);
   font-size: 16px;
   color: #c2c7d6;
+  cursor: pointer;
+}
+
+.project-wrapper-left h2:hover {
+  color: #7b8dc4;
 }
 
 .active {
@@ -568,9 +584,6 @@ body {
   justify-content: center;
   width: 100%;
   gap: 40px;
-
-  grid-template-rows: repeat(1, 1fr);
-  grid-template-columns: repeat(1, 1fr);
 }
 
 .project-card {
@@ -623,10 +636,10 @@ body {
 .project-navig-controls {
   display: flex;
   width: 100%;
-  column-gap: 5px;
+  gap: 15px;
   grid-column-start: 1;
   grid-column-end: 3;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -634,6 +647,7 @@ body {
 .project-navig-controls .next-button {
   display: flex;
   gap: 10px;
+  border-radius: 2px;
   cursor: pointer;
   justify-content: center;
   align-items: center;
@@ -764,12 +778,13 @@ form textarea {
   color: var(--accentblue);
 }
 
-.banner-left-side .navbar-left-section {
+.banner-left-side .navbar-logo-section {
+
   width: fit-content;
   gap: 10px;
 }
 
-.banner-left-side .navbar-left-section h2 {
+.banner-left-side .navbar-logo-section h2 {
   font-weight: bold;
   font-size: 25px;
 }
@@ -876,16 +891,26 @@ form textarea {
     align-items: center;
   }
 
-  .navbar-left-section {
+  .navbar-logo-section {
+    
     width: fit-content;
   }
 
-  .navbar-right-section {
+  .navbar-logo-section i{
+    display: none;
+  }
+
+
+  .navbar-menu-section {
+    display: flex;
     flex-direction: row;
     align-items: center;
+    margin-top: 0px;
     justify-content: center;
     padding-bottom: 0px;
+    gap: 50px;
   }
+
 
   .navig-section {
     right: 5%;
@@ -902,6 +927,7 @@ form textarea {
   .experience-section {
     padding: 30px;
     height: 100vh;
+    gap: 50px;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
@@ -914,7 +940,17 @@ form textarea {
   .experience-section-left {
     height: 80%;
     width: 350px;
-    transform: scale(0.8) translate(20%, -10%);
+    align-items: center;
+    transform: translate(20%, -8%);
+  }
+
+  .consultation h3{
+    flex-direction: row;
+  }
+
+
+  .project-title{
+    left: 0%;
   }
 
   .experience-section-right {
@@ -933,12 +969,18 @@ form textarea {
 
   .experience-section-clients {
     right: -50px;
-    top: -30px;
+    top: -5px;
   }
+
 }
 
 /*desktop*/
 @media screen and (min-width: 1000px) {
+
+  .hero-section h1{
+    font-size: 72px;
+  }
+
   .aboutus {
     height: 100vh;
   }
@@ -973,7 +1015,7 @@ form textarea {
   .experience-section-left {
     height: 80%;
     width: 350px;
-    transform: scale(1) translate(20%, -5%);
+    transform: scale(1) translate(20%, -8%);
   }
 
   .about-wrapper {
@@ -1044,14 +1086,7 @@ form textarea {
 
   .project-wrapper-left {
     flex-direction: column;
-  }
-
-  .project-wrapper-left h2 {
-    cursor: pointer;
-  }
-
-  .project-wrapper-left h2:hover {
-    color: #7b8dc4;
+    
   }
 
   .project-title {
@@ -1087,7 +1122,6 @@ form textarea {
   }
 }
 
-
 /* global classes */
 
 .background-blue {
@@ -1104,6 +1138,10 @@ form textarea {
   text-align: center;
 }
 
+button{
+  border-radius: 2px;
+}
+
 input {
   outline: none;
   border: 1px #a3aac2 solid;
@@ -1115,7 +1153,7 @@ input {
 
 textarea {
   outline: none;
-  border-radius:4px;
+  border-radius: 4px;
   border: 1px #a3aac2 solid;
   padding: 8px;
 }
