@@ -1,368 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="icon" href="/images/navbar/logo.svg" type="image/icon type" />
-    <title>The Box</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <!-- navbar home -->
-    <nav class="navbar">
-      <div class="navbar-logo-section">
-        <a href="#home-section" class="navbar-logo">
-          <img src="./images/navbar/logo.svg" alt="logo" />
-          <h2><span>The</span>Box</h2>
-        </a>
-        <i class="fa-solid fa-bars"></i>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="/images/navbar/logo.svg" type="image/icon type" />
+  <title>The Box</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- navbar home -->
+  <nav class="navbar flex z-10 absolute space-between background-white align-center">
+    <div class="navbar-logo-section pointer space-between align-center">
+      <a href="#home-section" class="navbar-logo flex row background-white align-center">
+        <img src="./images/navbar/logo.svg" alt="logo" />
+        <h2><span>The</span>Box</h2>
+      </a>
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <ul class="navbar-menu-section nav-links align-center">
+      <li><a href="#home-section" class="font-regular pointer">Home</a></li>
+      <li><a href="#aboutus-section" class="font-regular pointer">About Us</a></li>
+      <li><a href="#project-section" class="font-regular pointer">Projects</a></li>
+      <li><a href="#services-section" class="font-regular pointer">Services</a></li>
+      <li><a href="#contact-section" class="font-regular pointer">Contact us</a></li>
+    </ul>
+  </nav>
+
+  <!-- herosection -->
+  <section class="hero-section relative" id="home-section">
+    <h1 class="semibold relative">Building things<br />is our mission.</h1>
+    <div class="navig-section absolute borderrd-2">
+      <div class="navig-text flex column">
+        <h4 class="md">Feature Projects</h4>
+        <h5 class="md font-regular">The National University of<br />Architecture</h5>
       </div>
-      <ul class="navbar-menu-section nav-links">
-        <li><a href="#home-section">Home</a></li>
-        <li><a href="#aboutus-section">About Us</a></li>
-        <li><a href="#project-section">Projects</a></li>
-        <li><a href="#services-section">Services</a></li>
-        <li><a href="#contact-section">Contact us</a></li>
-      </ul>
-    </nav>
-
-    <!-- herosection -->
-    <section class="hero-section" id="home-section">
-      <h1>Building things<br />is our mission.</h1>
-
-      <div class="navig-section">
-        <div class="navig-text">
-          <h4>Feature Projects</h4>
-          <h5>The National University of<br />Architecture</h5>
+      <div class="navig-controls flex background-white">
+        <div class="back-button align-center pointer flex space-evenly">
+          <i class="fa-solid fa-arrow-left"></i>
+          <h2 class="md font-regular">Back</h2>
         </div>
-        <div class="navig-controls">
-          <div class="back-button">
-            <i class="fa-solid fa-arrow-left"></i>
-            <h2>Back</h2>
-          </div>
+        <div class="next-button align-center pointer flex space-evenly">
+          <h2 class="md font-regular">Next</h2>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <div class="next-button">
-            <h2>Next</h2>
+  <!-- reputation section -->
+  <section class="reputation-section flex align-center column">
+    <h2 class="centre-text xl2 font-bold">Our Reputation</h2>
+    <div class="reputation-section-wrapper flex justify-center align-center">
+      <div class="reputation-card borderrd-4 flex column">
+        <img src="./images/reputation/bestservices.svg" alt="bestservices" />
+        <h2 class="bold lg">Best Services</h2>
+        <h4 class="sm font-regular">
+          Nullam senectus porttitor<br />in eget. Eget rutrum leo.
+        </h4>
+      </div>
+      <div class="reputation-card  borderrd-4 flex column">
+        <img src="./images/reputation/bestservices.svg" alt="bestservices" />
+        <h2 class="bold lg">Best Teams</h2>
+        <h4 class="sm font-regular">
+          Cursus semper tellus volutpat<br />
+          aliquet lacus.
+        </h4>
+      </div>
+      <div class="reputation-card borderrd-4 flex column">
+        <img src="./images/reputation/bestdesigns.svg" alt="bestdesign" />
+        <h2 class="bold lg">Best Designs</h2>
+        <h4 class="sm font-regular">
+          Ultricies at ipsum nunc,<br />
+          tristique nam lectus.
+        </h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- about us -->
+  <section class="aboutus">
+    <span id="aboutus-section"></span>
+    <div class="about-wrapper">
+      <div class="about-hero-img relative borderrd-4 justify-center align"></div>
+      <div class="about-text flex borderrd-4 column background-blue">
+        <h2 class="xl2 bold">About us</h2>
+        <h3 class="md font-regular">
+          For more than 30 years we have been delivering world-class
+          construction and we've built many lasting relationships along the
+          way.
+        </h3>
+        <h3 class="md font-regular">
+          We've matured into an industry leader and trusted resource for those
+          seeking quality, innovation and reliability when building in the
+          U.S.
+        </h3>
+        <button class="borderrd-4 ellipsis font-semibold sm pointer background-white">More on Our History</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- services -->
+  <section class="services flex column align-center" id="services-section">
+    <h2 class="font-bold xl2">Services</h2>
+    <div class="services-wrapper ">
+      <div class="services-card flex align-center space-evenly borderrd-4 column pointer background-white">
+        <img src="./images/services/construction.svg" width="40px" height="40px" alt="construction" />
+        <div class="background-blue"></div>
+        <h3 class="font-regular lg">construction</h3>
+      </div>
+      <div class="services-card flex align-center space-evenly borderrd-4 column pointer background-blue">
+        <img src="./images/services/renovation.svg" width="40px" height="40px" alt="renovation" />
+        <div class="background-white"></div>
+        <h3 class="font-regular lg">renovation</h3>
+      </div>
+      <div class="services-card flex align-center space-evenly borderrd-4 column pointer background-white">
+        <img src="./images/services/consultation.svg" width="40px" height="40px" alt="consultation" />
+        <div class="background-blue"></div>
+        <h3 class="font-regular lg">consultation</h3>
+      </div>
+      <div class="services-card flex align-center space-evenly borderrd-4 column pointer background-blue">
+        <img src="./images/services/repair.svg" width="40px" height="40px" alt="repair" />
+        <div class="background-white"></div>
+        <h3 class="font-regular lg">repair</h3>
+      </div>
+      <div class="services-card flex align-center space-evenly borderrd-4 column pointer background-white">
+        <img src="./images/services/architecture.svg" width="40px" height="40px" alt="architecture" />
+        <div class="background-blue"></div>
+        <h3 class="font-regular lg">architecture</h3>
+      </div>
+      <div class="services-card flex align-center space-evenly borderrd-4 column pointer background-blue">
+        <img src="./images/services/electric.svg" width="40px" height="40px" alt="electric" />
+        <div class="background-white"></div>
+        <h3 class="font-regular lg">electric</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- experience-section -->
+  <section class="experience-section flex align-center">
+    <div class="experience-section-left">
+      <div class="experience-section-card flex column start borderrd-4 relative experience-section-clients">
+        <img class="absolute" src="./images/experience/clients.svg" alt="clients-svg" />
+        <h2 class="count font-semibold xl4">84</h2>
+        <h3 class="content">Happy Clients</h3>
+      </div>
+      <div class="experience-section-card flex column start borderrd-4 relative experience-section-projects">
+        <img class="absolute" src="./images/experience/projects.svg" alt="projects-svg" />
+        <h2 class="count font-semibold xl4">123</h2>
+        <h3 class="content">Projects Completed</h3>
+      </div>
+
+      <div class="experience-section-card flex column start borderrd-4 relative experience-section-awards">
+        <img class="absolute" src="./images/experience/awards.svg" alt="awards-svg" />
+        <h2 class="count font-semibold xl4">37</h2>
+        <h3 class="content">Awards Win</h3>
+      </div>
+      <div class="experience-section-card flex column start borderrd-4 relative experience-section-years">
+        <img class="absolute" src="./images/experience/business.svg" alt="business-svg" />
+        <h2 class="count font-semibold xl4">30</h2>
+        <h3 class="content">Years in Business</h3>
+      </div>
+    </div>
+    <div class="experience-section-right flex column justify-center">
+      <h2 class="font-bold xl2">30 Years<br />Experience</h2>
+      <h3 class="font-regular lg">
+        Our company has been the
+        leading provided construction
+        services to clients throughout
+        the USA since 1988.
+      </h3>
+      <a href="#contact-section" class="borderrd-2 pointer md">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- consultation -->
+  <section class="consultation flex align-center">
+    <div class="flex column">
+      <h2 class="xl font-bold">Free consultation with exceptional quality</h2>
+      <h3 class="font-regular flex lg">Just one call away: <span class="pointer">+84 1102 2703</span></h3>
+    </div>
+    <button class="borderrd-2 pointer font-semibold sm ">Get your consultation now</button>
+  </section>
+
+  <!-- projects section -->
+  <section class="projects" id="project-section">
+    <h2 class="project-title xl2">Projects</h2>
+    <div class="project-wrapper flex">
+      <div class="project-wrapper-left flex ">
+        <h2 class="active pointer sm font-regular">All</h2>
+        <h2 class="pointer sm font-regular">Commercial</h2>
+        <h2 class="pointer sm font-regular">Residential</h2>
+        <h2 class="pointer sm font-regular">Others</h2>
+      </div>
+      <div class="project-wrapper-right justify-center">
+        <div class="project-card borderrd-2 flex pointer">
+          <img src="./images/projects/oreganoheight.svg" alt="oreganoproject" />
+          <div class="flex justify-center column">
+            <h2 class="font-bold md">Oregano Height Hotel</h2>
+            <h3 class="font-regular sm ellipsis">2715 Ash Dr. San Jose, South Dakota</h3>
+          </div>
+        </div>
+        <div class="project-card  borderrd-2 flex pointer">
+          <img src="./images/projects/parkinston.svg" alt="parkinston" />
+          <div class="flex justify-center column">
+            <h2 class="font-bold md">Mr. Parkinston's House</h2>
+            <h3 class="font-regular sm ellipsis">3517 W. Gray St. Utica, Pennsylvania</h3>
+          </div>
+        </div>
+        <div class="project-card  borderrd-2 flex pointer">
+          <img src="./images/projects/wildstoneinfra.svg" alt="wildstoneinfra" />
+          <div class="flex justify-center column">
+            <h2 class="font-bold md">wildstone infra Hotel</h2>
+            <h3 class="font-regular sm ellipsis">2464 Royal Ln. Mesa, New Jersey</h3>
+          </div>
+        </div>
+        <div class="project-card  borderrd-2 flex pointer">
+          <img src="./images/projects/wishstone.svg" alt="wishstone" />
+          <div class="flex justify-center column">
+            <h2 class="font-bold md">Wishstone Hotel</h2>
+            <h3 class="font-regular sm ellipsis">2972 Westheimer Rd. Santa Ana, Illinois</h3>
+          </div>
+        </div>
+        <div class="project-navig-controls flex align-center">
+          <div class="back-button flex pointer justify-center  align-center">
+            <i class="fa-solid fa-arrow-left"></i>
+            <h2 class="md font-regular">Back</h2>
+          </div>
+          <div class="page-navig flex">
+            <span class="background-blue"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="next-button flex pointer justify-center  align-center">
+            <h2 class="md font-regular">Next</h2>
             <i class="fa-solid fa-arrow-right"></i>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- reputation section -->
-    <section class="reputation-section">
-      <h2 class="centre-text">Our Reputation</h2>
-      <div class="reputation-section-wrapper">
-        <div class="reputation-card">
-          <img src="./images/reputation/bestservices.svg" alt="bestdesign" />
-          <h2>Best Services</h2>
-          <h4>
-            Nullam senectus porttitor<br />in eget. Eget rutrum leo interdum.
-          </h4>
-        </div>
-        <div class="reputation-card">
-          <img src="./images/reputation/bestservices.svg" alt="bestdesign" />
-          <h2>Best Teams</h2>
-          <h4>
-            Cursus semper tellus volutpat<br />
-            aliquet lacus.
-          </h4>
-        </div>
-        <div class="reputation-card">
-          <img src="./images/reputation/bestdesigns.svg" alt="bestdesign" />
-          <h2>Best Designs</h2>
-          <h4>
-            Ultricies at ipsum nunc,<br />
-            tristique nam lectus.
-          </h4>
+  <!-- contact us -->
+  <section class="contactus centre-text flex column align-center" id="contact-section">
+    <h3 class="xl2">What can us do for you?</h3>
+    <h4 class="md font-regular">
+      We are ready to work on a project of any complexity,<br />
+      whether it's commercial or residential.
+    </h4>
+    <form class="flex column align-center">
+      <div class="flex">
+        <input type="text" maxlength="20" placeholder="Your Name *" />
+        <input type="email" maxlength="100" placeholder="Email *" />
+      </div>
+      <div class="flex">
+        <input type="text" maxlength="30" placeholder="Reason for contacting *" />
+        <input type="tel" pattern="[0-9]{10}" maxlength="10" placeholder="Phone" />
+      </div>
+      <textarea name="textarea" rows="8" cols="9" placeholder="Message"></textarea>
+      <h6 class="sm font-regular"><span>*</span> indicates a required field</h6>
+      <button class="md pointer borderrd-2" type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- footer -->
+  <section class="footer">
+    <div class="footer-banner flex align-center space-between">
+      <div class="banner-left-side flex">
+        <h2 class="font-regular sm"><span>Address : </span>6391 Elgin St. Celina, Delaware 10299</h2>
+        <h2 class="font-regular sm"><span>Phone : </span>+84 1102 2703</h2>
+        <h2 class="font-regular sm"><span>Email : </span>hello@thebox.com</h2>
+        <div class="navbar-logo-section">
+          <img src="./images/navbar/logo.svg" alt="logo" />
+          <h2 class="bold xl"><span>The</span>Box</h2>
         </div>
       </div>
-    </section>
-
-    <!-- about us -->
-    <section class="aboutus">
-      <span id="aboutus-section"></span>
-      <div class="about-wrapper">
-        <div class="about-hero-img"></div>
-        <div class="about-text">
-          <h2>About us</h2>
-          <h3>
-            For more than 30 years we have been delivering world-class
-            construction and we've built many lasting relationships along the
-            way.
-          </h3>
-          <h3>
-            We've matured into an industry leader and trusted resource for those
-            seeking quality, innovation and reliability when building in the
-            U.S.
-          </h3>
-          <button>More on Our History</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- services -->
-    <section class="services" id="services-section">
-      <h2>Services</h2>
-      <div class="services-wrapper">
-        <div class="services-card background-white">
-          <img
-            src="./images/services/construction.svg"
-            width="40px"
-            height="40px"
-            alt="construction"
-          />
-          <div class="background-blue"></div>
-          <h3>construction</h3>
-        </div>
-        <div class="services-card background-blue">
-          <img
-            src="./images/services/renovation.svg"
-            width="40px"
-            height="40px"
-            alt="renovation"
-          />
-          <div class="background-white"></div>
-          <h3>renovation</h3>
-        </div>
-        <div class="services-card background-white">
-          <img
-            src="./images/services/consultation.svg"
-            width="40px"
-            height="40px"
-            alt="consultation"
-          />
-          <div class="background-blue"></div>
-          <h3>consultation</h3>
-        </div>
-        <div class="services-card background-blue">
-          <img
-            src="./images/services/repair.svg"
-            width="40px"
-            height="40px"
-            alt="repair"
-          />
-          <div class="background-white"></div>
-          <h3>repair</h3>
-        </div>
-        <div class="services-card background-white">
-          <img
-            src="./images/services/architecture.svg"
-            width="40px"
-            height="40px"
-            alt="architecture"
-          />
-          <div class="background-blue"></div>
-          <h3>architecture</h3>
-        </div>
-        <div class="services-card background-blue">
-          <img
-            src="./images/services/electric.svg"
-            width="40px"
-            height="40px"
-            alt="electric"
-          />
-          <div class="background-white"></div>
-          <h3>electric</h3>
-        </div>
-      </div>
-    </section>
-
-    <!-- experience-section -->
-    <section class="experience-section">
-      <div class="experience-section-left">
-        <div class="experience-section-card experience-section-clients">
-          <img src="./images/experience/clients.svg" alt="awards-svg" />
-          <h2 class="count">84</h2>
-          <h3 class="content">Happy Clients</h3>
-        </div>
-        <div class="experience-section-card experience-section-projects">
-          <img src="./images/experience/projects.svg" alt="awards-svg" />
-          <h2 class="count">123</h2>
-          <h3 class="content">Projects Completed</h3>
-        </div>
-
-        <div class="experience-section-card experience-section-awards">
-          <img src="./images/experience/awards.svg" alt="awards-svg" />
-          <h2 class="count">37</h2>
-          <h3 class="content">Awards Win</h3>
-        </div>
-        <div class="experience-section-card experience-section-years">
-          <img src="./images/experience/business.svg" alt="awards-svg" />
-          <h2 class="count">30</h2>
-          <h3 class="content">Years in Business</h3>
-        </div>
-      </div>
-      <div class="experience-section-right">
-        <h2>30 Years<br />Experience</h2>
-        <h3>
-          Our company has been the<br />
-          leading provided construction<br />
-          services to clients throughout<br />
-          the USA since 1988.
-        </h3>
-        <a href="#contact-section">Contact Us</a>
-      </div>
-    </section>
-
-    <!-- consultation -->
-    <section class="consultation">
-      <div>
-        <h2>Free consultation with exceptional quality</h2>
-        <h3>Just one call away: <span>+84 1102 2703</span></h3>
-      </div>
-      <button>Get your consultation now</button>
-    </section>
-
-    <!-- projects section -->
-    <section class="projects" id="project-section">
-      <h2 class="project-title">Projects</h2>
-      <div class="project-wrapper">
-        <div class="project-wrapper-left">
-          <h2 class="active">All</h2>
-          <h2>Commercial</h2>
-          <h2>Residential</h2>
-          <h2>Others</h2>
-        </div>
-        <div class="project-wrapper-right">
-          <div class="project-card">
-            <img
-              src="./images/projects/oreganoheight.svg"
-              alt="oreganoproject"
-            />
-            <div>
-              <h2>Oregano Height Hotel</h2>
-              <h3>2715 Ash Dr. San Jose, South Dakota</h3>
-            </div>
+      <div class="footer-banner-right-side flex column justify-center">
+        <div class="newsletter">
+          <h2 class="flex column font-regular sm">Newsletter:</h2>
+          <div class="flex">
+            <input type="email" placeholder="Enter your email here" />
+            <button class="pointer borderrd-4" type="submit">Subscribe</button>
           </div>
-          <div class="project-card">
-            <img src="./images/projects/parkinston.svg" alt="parkinston" />
-            <div>
-              <h2>Mr. Parkinston's House</h2>
-              <h3>3517 W. Gray St. Utica, Pennsylvania</h3>
-            </div>
-          </div>
-          <div class="project-card">
-            <img
-              src="./images/projects/wildstoneinfra.svg"
-              alt="wildstoneinfra"
-            />
-            <div>
-              <h2>wildstone infra Hotel</h2>
-              <h3>2464 Royal Ln. Mesa, New Jersey</h3>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="./images/projects/wishstone.svg" alt="wishstone" />
-            <div>
-              <h2>Wishstone Hotel</h2>
-              <h3>2972 Westheimer Rd. Santa Ana, Illinois</h3>
-            </div>
-          </div>
-          <div class="project-navig-controls">
-            <div class="back-button">
-              <i class="fa-solid fa-arrow-left"></i>
-              <h2>Back</h2>
-            </div>
-            <div class="page-navig">
-              <span class="background-blue"></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <div class="next-button">
-              <h2>Next</h2>
-              <i class="fa-solid fa-arrow-right"></i>
-            </div>
+        </div>
+        <div class="social flex column">
+          <h2 class=" font-regular sm">Social :</h2>
+          <div class="social-icons flex align-center">
+            <img src="./images/footer/facebook.svg" alt="facebook" class="pointer" />
+            <img src="./images/footer/linkedin.svg" alt="linkedin" class="pointer" />
+            <img src="./images/footer/twitter.svg" alt="twitter" class="pointer" />
           </div>
         </div>
       </div>
-    </section>
+    </div>
+    <div class="footer-rights">
+      <h2 class="font-regular sm">TheBox Company © 2022. All Rights Reserved</h2>
+    </div>
+  </section>
+</body>
 
-    <!-- contact us -->
-    <section class="contactus" id="contact-section">
-      <h3>What can us do for you?</h3>
-      <h4>
-        We are ready to work on a project of any complexity,<br />
-        whether it's commercial or residential.
-      </h4>
-      <form>
-        <div>
-          <input type="text" maxlength="20" placeholder="Your Name *" />
-          <input type="email" maxlength="100" placeholder="Email *" />
-        </div>
-        <div>
-          <input
-            type="text"
-            maxlength="30"
-            placeholder="Reason for contacting *"
-          />
-          <input
-            type="tel"
-            pattern="[0-9]{10}"
-            maxlength="10"
-            placeholder="Phone"
-          />
-        </div>
-        <textarea
-          name="textarea"
-          rows="8"
-          cols="9"
-          placeholder="Message"
-        ></textarea>
-        <h6><span>*</span> indicates a required field</h6>
-        <button type="submit">Submit</button>
-      </form>
-    </section>
-
-    <!-- footer -->
-    <section class="footer">
-      <div class="footer-banner">
-        <div class="banner-left-side">
-          <h2><span>Address : </span>6391 Elgin St. Celina, Delaware 10299</h2>
-          <h2><span>Phone : </span>+84 1102 2703</h2>
-          <h2><span>Email : </span>hello@thebox.com</h2>
-          <div class="navbar-logo-section">
-            <img src="./images/navbar/logo.svg" alt="logo" />
-            <h2><span>The</span>Box</h2>
-          </div>
-        </div>
-        <div class="footer-banner-right-side">
-          <div class="newsletter">
-            <h2>Newsletter:</h2>
-            <div>
-              <input type="email" placeholder="Enter your email here" />
-              <button type="submit">Subscribe</button>
-            </div>
-          </div>
-
-          <div class="social">
-            <h2>Social :</h2>
-            <div class="social-icons">
-              <img src="./images/footer/facebook.svg" alt="facebook" />
-              <img src="./images/footer/linkedin.svg" alt="linkedin" />
-              <img src="./images/footer/twitter.svg" alt="twitter" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-rights">
-        <h2>TheBox Company © 2022. All Rights Reserved</h2>
-      </div>
-    </section>
-  </body>
 </html>
